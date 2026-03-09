@@ -4,18 +4,21 @@ export default function Index() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 w-full z-50 bg-white border-b border-black">
         <div className="container mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
-          <a href="/" className="text-xl font-bold tracking-tighter">
-            GRIDFORM
+          <a href="/" className="text-sm font-bold tracking-tighter uppercase">
+            Курсовая работа · 2026
           </a>
           <div className="flex space-x-8">
-            <a href="#work" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors">
-              Работы
+            <a href="#research" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors">
+              Исследование
             </a>
-            <a href="#about" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors">
-              О нас
+            <a href="#characteristics" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors">
+              Характеристика
             </a>
-            <a href="#contact" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors">
-              Контакты
+            <a href="#quality" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors">
+              Оценка качества
+            </a>
+            <a href="#conclusions" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors">
+              Выводы
             </a>
           </div>
         </div>
@@ -24,103 +27,137 @@ export default function Index() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 md:px-8 container mx-auto">
         <div className="grid grid-cols-12 gap-4">
-          <div className="col-span-12 md:col-span-7 mb-8 md:mb-0">
-            <h1 className="text-8xl md:text-9xl font-bold tracking-tighter leading-none mb-6">
-              GRID
+          <div className="col-span-12 md:col-span-8 mb-8 md:mb-0">
+            <p className="text-sm uppercase tracking-widest text-red-600 mb-4">Товароведение и экспертиза товаров</p>
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-none mb-6">
+              ТОВАРОВЕДНАЯ
               <br />
-              FORM
+              ХАРАКТЕРИСТИКА
+              <br />
+              <span className="text-red-600">И ОЦЕНКА</span>
+              <br />
+              КАЧЕСТВА
             </h1>
-            <p className="text-xl max-w-xl">
-              Ясность. Точность. Структура. Мы превращаем сложные идеи в чистый, функциональный дизайн, который говорит сам за себя.
+            <p className="text-xl max-w-2xl mt-6">
+              Колбасные изделия полукопчёные в розничной сети — исследование, анализ и экспертиза качества в соответствии с ГОСТ Р 53588-2009
             </p>
           </div>
-          <div className="col-span-12 md:col-span-5 flex items-center justify-center">
-            <div className="relative w-full aspect-square bg-red-600">
-              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-black"></div>
+          <div className="col-span-12 md:col-span-4 flex flex-col justify-center items-end gap-4">
+            <div className="w-full aspect-square bg-red-600 flex items-center justify-center relative">
+              <span className="text-white text-6xl font-bold tracking-tighter text-center leading-tight px-4">ПОЛУ­КОП­ЧЁНЫЕ</span>
+              <div className="absolute -bottom-3 -right-3 w-16 h-16 bg-black"></div>
             </div>
+          </div>
+        </div>
+
+        {/* Meta info strip */}
+        <div className="mt-16 pt-8 border-t border-black grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div>
+            <p className="text-sm uppercase tracking-widest text-neutral-500 mb-1">Дисциплина</p>
+            <p className="font-bold">Товароведение</p>
+          </div>
+          <div>
+            <p className="text-sm uppercase tracking-widest text-neutral-500 mb-1">Объект</p>
+            <p className="font-bold">Полукопчёные колбасы</p>
+          </div>
+          <div>
+            <p className="text-sm uppercase tracking-widest text-neutral-500 mb-1">Стандарт</p>
+            <p className="font-bold">ГОСТ Р 53588-2009</p>
+          </div>
+          <div>
+            <p className="text-sm uppercase tracking-widest text-neutral-500 mb-1">Год</p>
+            <p className="font-bold">2026</p>
           </div>
         </div>
       </section>
 
-      {/* Work Section */}
-      <section id="work" className="py-20 px-4 md:px-8 bg-black text-white">
+      {/* Research Section */}
+      <section id="research" className="py-20 px-4 md:px-8 bg-black text-white">
         <div className="container mx-auto">
-          <h2 className="text-6xl font-bold tracking-tighter mb-12">РАБОТЫ</h2>
+          <h2 className="text-6xl font-bold tracking-tighter mb-4">ИССЛЕДОВАНИЕ</h2>
+          <p className="text-neutral-400 mb-12 text-lg">Объекты и методы исследования</p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Project 1 */}
-            <div className="group">
-              <div className="aspect-square bg-white mb-4 overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center bg-neutral-100 group-hover:bg-red-600 transition-colors duration-300">
-                  <span className="text-black text-8xl font-bold">01</span>
-                </div>
+            {/* Sample 1 */}
+            <div className="group border border-neutral-800 p-6 hover:border-red-600 transition-colors duration-300">
+              <div className="aspect-square bg-neutral-900 mb-4 overflow-hidden flex items-center justify-center group-hover:bg-red-600 transition-colors duration-300">
+                <span className="text-white text-7xl font-bold">01</span>
               </div>
-              <h3 className="text-xl font-bold mb-2">TechFlow Solutions</h3>
-              <p className="text-neutral-400">Полный брендинг и типографическая система для финтех-стартапа</p>
+              <h3 className="text-xl font-bold mb-2">«Краковская»</h3>
+              <p className="text-neutral-400">Полукопчёная колбаса высшего сорта. Содержание мышечной ткани не менее 40%</p>
+              <p className="text-red-600 text-sm mt-3 uppercase tracking-widest">Высший сорт</p>
             </div>
 
-            {/* Project 2 */}
-            <div className="group">
-              <div className="aspect-square bg-white mb-4 overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center bg-neutral-100 group-hover:bg-red-600 transition-colors duration-300">
-                  <span className="text-black text-8xl font-bold">02</span>
-                </div>
+            {/* Sample 2 */}
+            <div className="group border border-neutral-800 p-6 hover:border-red-600 transition-colors duration-300">
+              <div className="aspect-square bg-neutral-900 mb-4 overflow-hidden flex items-center justify-center group-hover:bg-red-600 transition-colors duration-300">
+                <span className="text-white text-7xl font-bold">02</span>
               </div>
-              <h3 className="text-xl font-bold mb-2">Alpine Ventures</h3>
-              <p className="text-neutral-400">Минималистичная визуальная коммуникация для инвестиционного фонда</p>
+              <h3 className="text-xl font-bold mb-2">«Одесская»</h3>
+              <p className="text-neutral-400">Полукопчёная колбаса первого сорта. Характерный пряный аромат копчения</p>
+              <p className="text-red-600 text-sm mt-3 uppercase tracking-widest">Первый сорт</p>
             </div>
 
-            {/* Project 3 */}
-            <div className="group">
-              <div className="aspect-square bg-white mb-4 overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center bg-neutral-100 group-hover:bg-red-600 transition-colors duration-300">
-                  <span className="text-black text-8xl font-bold">03</span>
-                </div>
+            {/* Sample 3 */}
+            <div className="group border border-neutral-800 p-6 hover:border-red-600 transition-colors duration-300">
+              <div className="aspect-square bg-neutral-900 mb-4 overflow-hidden flex items-center justify-center group-hover:bg-red-600 transition-colors duration-300">
+                <span className="text-white text-7xl font-bold">03</span>
               </div>
-              <h3 className="text-xl font-bold mb-2">Nova Industries</h3>
-              <p className="text-neutral-400">Модульная дизайн-система для производственной компании</p>
+              <h3 className="text-xl font-bold mb-2">«Украинская»</h3>
+              <p className="text-neutral-400">Полукопчёная колбаса первого сорта со свининой и говядиной</p>
+              <p className="text-red-600 text-sm mt-3 uppercase tracking-widest">Первый сорт</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="py-20 px-4 md:px-8">
+      {/* Characteristics Section */}
+      <section id="characteristics" className="py-20 px-4 md:px-8">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-8">
             <div className="col-span-12 md:col-span-5">
-              <h2 className="text-6xl font-bold tracking-tighter mb-8">О НАС</h2>
-              <div className="aspect-[4/5] bg-neutral-100 relative mb-8 md:mb-0">
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 border-2 border-black"></div>
+              <h2 className="text-6xl font-bold tracking-tighter mb-8">ХАРАК­ТЕРИС­ТИКА</h2>
+              <div className="aspect-[4/5] bg-neutral-100 relative mb-8 md:mb-0 flex items-center justify-center">
+                <div className="absolute top-0 left-0 w-full h-2 bg-red-600"></div>
+                <div className="text-center p-8">
+                  <p className="text-8xl font-bold text-red-600 mb-2">60°C</p>
+                  <p className="text-sm uppercase tracking-widest text-neutral-500">Температура копчения</p>
+                  <div className="my-6 border-t border-black"></div>
+                  <p className="text-5xl font-bold mb-2">35%</p>
+                  <p className="text-sm uppercase tracking-widest text-neutral-500">Max влажность</p>
+                  <div className="my-6 border-t border-black"></div>
+                  <p className="text-5xl font-bold mb-2">6 мес.</p>
+                  <p className="text-sm uppercase tracking-widest text-neutral-500">Срок хранения</p>
+                </div>
               </div>
             </div>
             <div className="col-span-12 md:col-span-7 md:pt-24">
               <p className="text-xl mb-6">
-                GRIDFORM - дизайн-студия, преданная принципам ясности, точности и осмысленной коммуникации. Мы верим, что великий дизайн незаметен - он просто работает.
+                Полукопчёные колбасы — продукты, в процессе производства которых применяется осадка, обжарка, варка, горячее копчение и сушка. Эти операции обеспечивают продукту особый вкус, аромат и длительный срок хранения.
               </p>
               <p className="mb-6">
-                Наш подход основан на системном мышлении и типографическом мастерстве. Мы используем модульные сетки, чистую гротескную типографику, асимметричные композиции и предметную фотографию для создания дизайна, который говорит ясно и убедительно.
+                Производство регламентируется ГОСТ Р 53588-2009 «Колбасы полукопчёные». Стандарт устанавливает технические требования, правила приёмки, методы контроля, требования к маркировке и хранению готовой продукции.
               </p>
               <p className="mb-6">
-                Основанная дизайнерами, убежденными, что форма следует за функцией, мы сотрудничаем с прогрессивными брендами, создавая визуальные языки, которые проверены временем.
+                Ассортимент полукопчёных колбас в розничной сети формируется из продукции разных производителей, что обусловливает существенную вариативность органолептических и физико-химических показателей.
               </p>
               <div className="grid grid-cols-2 gap-4 mt-12">
                 <div>
-                  <h3 className="text-sm uppercase tracking-widest mb-2">Принципы</h3>
+                  <h3 className="text-sm uppercase tracking-widest mb-3 text-red-600">Показатели качества</h3>
                   <ul className="space-y-2">
-                    <li>Минимализм</li>
-                    <li>Модульные сетки</li>
-                    <li>Гротескная типографика</li>
-                    <li>Предметная фотография</li>
+                    <li className="flex items-center gap-2"><span className="w-2 h-2 bg-red-600 inline-block"></span>Органолептические</li>
+                    <li className="flex items-center gap-2"><span className="w-2 h-2 bg-black inline-block"></span>Физико-химические</li>
+                    <li className="flex items-center gap-2"><span className="w-2 h-2 bg-black inline-block"></span>Микробиологические</li>
+                    <li className="flex items-center gap-2"><span className="w-2 h-2 bg-black inline-block"></span>Безопасность</li>
                   </ul>
                 </div>
                 <div>
-                  <h3 className="text-sm uppercase tracking-widest mb-2">Услуги</h3>
+                  <h3 className="text-sm uppercase tracking-widest mb-3 text-red-600">Методы оценки</h3>
                   <ul className="space-y-2">
-                    <li>Брендинг</li>
-                    <li>Визуальные системы</li>
-                    <li>Типографика</li>
-                    <li>Цифровой дизайн</li>
+                    <li className="flex items-center gap-2"><span className="w-2 h-2 bg-red-600 inline-block"></span>Органолептический</li>
+                    <li className="flex items-center gap-2"><span className="w-2 h-2 bg-black inline-block"></span>Химический анализ</li>
+                    <li className="flex items-center gap-2"><span className="w-2 h-2 bg-black inline-block"></span>Дегустация</li>
+                    <li className="flex items-center gap-2"><span className="w-2 h-2 bg-black inline-block"></span>Маркировка</li>
                   </ul>
                 </div>
               </div>
@@ -129,96 +166,159 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-20 px-4 md:px-8 bg-red-600 text-white">
+      {/* Quality Assessment Section */}
+      <section id="quality" className="py-20 px-4 md:px-8 bg-black text-white">
+        <div className="container mx-auto">
+          <h2 className="text-6xl font-bold tracking-tighter mb-4">ОЦЕНКА КАЧЕСТВА</h2>
+          <p className="text-neutral-400 mb-12 text-lg">Результаты экспертизы образцов</p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            {/* Organoleptic */}
+            <div className="border border-neutral-800 p-8">
+              <h3 className="text-red-600 text-sm uppercase tracking-widest mb-6">01 · Органолептические показатели</h3>
+              <div className="space-y-4">
+                {[
+                  { param: "Внешний вид", value: "Соответствует", score: "100%" },
+                  { param: "Цвет на разрезе", value: "Розово-красный", score: "100%" },
+                  { param: "Консистенция", value: "Упругая", score: "95%" },
+                  { param: "Запах и вкус", value: "Характерный", score: "90%" },
+                ].map((item) => (
+                  <div key={item.param} className="flex items-center justify-between border-b border-neutral-800 pb-4">
+                    <div>
+                      <p className="font-bold">{item.param}</p>
+                      <p className="text-neutral-400 text-sm">{item.value}</p>
+                    </div>
+                    <span className="text-red-600 font-bold text-xl">{item.score}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Physicochemical */}
+            <div className="border border-neutral-800 p-8">
+              <h3 className="text-red-600 text-sm uppercase tracking-widest mb-6">02 · Физико-химические показатели</h3>
+              <div className="space-y-4">
+                {[
+                  { param: "Массовая доля влаги", value: "ГОСТ: ≤ 52%", score: "✓" },
+                  { param: "Массовая доля жира", value: "ГОСТ: ≤ 45%", score: "✓" },
+                  { param: "Массовая доля белка", value: "ГОСТ: ≥ 13%", score: "✓" },
+                  { param: "Массовая доля соли", value: "ГОСТ: ≤ 4,5%", score: "✓" },
+                ].map((item) => (
+                  <div key={item.param} className="flex items-center justify-between border-b border-neutral-800 pb-4">
+                    <div>
+                      <p className="font-bold">{item.param}</p>
+                      <p className="text-neutral-400 text-sm">{item.value}</p>
+                    </div>
+                    <span className="text-green-400 font-bold text-xl">{item.score}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Summary Table */}
+          <div className="border border-neutral-700">
+            <div className="grid grid-cols-4 bg-red-600 p-4">
+              <p className="text-sm uppercase tracking-widest font-bold">Образец</p>
+              <p className="text-sm uppercase tracking-widest font-bold">Сорт</p>
+              <p className="text-sm uppercase tracking-widest font-bold">Соответствие ГОСТ</p>
+              <p className="text-sm uppercase tracking-widest font-bold">Итог</p>
+            </div>
+            {[
+              { name: "«Краковская»", grade: "Высший", gost: "Полное", result: "Отлично" },
+              { name: "«Одесская»", grade: "Первый", gost: "Полное", result: "Хорошо" },
+              { name: "«Украинская»", grade: "Первый", gost: "Частичное", result: "Удовл." },
+            ].map((row, i) => (
+              <div key={row.name} className={`grid grid-cols-4 p-4 border-t border-neutral-700 ${i % 2 === 1 ? "bg-neutral-900" : ""}`}>
+                <p className="font-bold">{row.name}</p>
+                <p className="text-neutral-400">{row.grade}</p>
+                <p className="text-neutral-400">{row.gost}</p>
+                <p className="text-red-600 font-bold">{row.result}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Conclusions Section */}
+      <section id="conclusions" className="py-20 px-4 md:px-8 bg-red-600 text-white">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-6xl font-bold tracking-tighter mb-8">КОНТАКТЫ</h2>
-              <p className="text-xl mb-8">Заинтересованы в сотрудничестве? Давайте обсудим ваш проект.</p>
-              <div className="space-y-4">
-                <p className="flex items-center">
-                  <span className="w-24 text-sm uppercase tracking-widest">Почта</span>
-                  <a href="mailto:hello@gridform.ru" className="hover:underline">
-                    hello@gridform.ru
-                  </a>
-                </p>
-                <p className="flex items-center">
-                  <span className="w-24 text-sm uppercase tracking-widest">Телефон</span>
-                  <a href="tel:+74951234567" className="hover:underline">
-                    +7 (495) 123-45-67
-                  </a>
-                </p>
-                <p className="flex items-center">
-                  <span className="w-24 text-sm uppercase tracking-widest">Адрес</span>
-                  <span>Москва, Россия</span>
-                </p>
+              <h2 className="text-6xl font-bold tracking-tighter mb-8">ВЫВОДЫ</h2>
+              <p className="text-xl mb-8 text-white/90">
+                По результатам товароведной экспертизы полукопчёных колбасных изделий в розничной сети были сделаны следующие выводы:
+              </p>
+              <div className="space-y-6">
+                {[
+                  {
+                    num: "01",
+                    text: "Все исследуемые образцы прошли органолептическую оценку и соответствуют требованиям ГОСТ Р 53588-2009 по внешнему виду и цвету.",
+                  },
+                  {
+                    num: "02",
+                    text: "Физико-химические показатели образцов высшего сорта полностью соответствуют нормативной документации.",
+                  },
+                  {
+                    num: "03",
+                    text: "Образец «Украинская» показал частичное несоответствие по показателю влажности — требует дополнительного контроля.",
+                  },
+                  {
+                    num: "04",
+                    text: "Маркировка всех образцов соответствует требованиям ТР ТС 022/2011 «Пищевая продукция в части её маркировки».",
+                  },
+                ].map((item) => (
+                  <div key={item.num} className="flex gap-6 border-t border-white/30 pt-6">
+                    <span className="text-white/40 font-bold text-2xl flex-shrink-0">{item.num}</span>
+                    <p>{item.text}</p>
+                  </div>
+                ))}
               </div>
             </div>
-            <div>
-              <form className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm uppercase tracking-widest mb-2">
-                    Имя
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    className="w-full bg-transparent border-b-2 border-white py-2 px-0 focus:outline-none focus:border-black placeholder-white/50"
-                    placeholder="Ваше имя"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm uppercase tracking-widest mb-2">
-                    Почта
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    className="w-full bg-transparent border-b-2 border-white py-2 px-0 focus:outline-none focus:border-black placeholder-white/50"
-                    placeholder="Ваш email"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="message" className="block text-sm uppercase tracking-widest mb-2">
-                    Сообщение
-                  </label>
-                  <textarea
-                    id="message"
-                    rows={4}
-                    className="w-full bg-transparent border-b-2 border-white py-2 px-0 focus:outline-none focus:border-black placeholder-white/50"
-                    placeholder="Ваше сообщение"
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  className="mt-8 px-8 py-3 bg-black text-white text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-colors"
-                >
-                  Отправить
-                </button>
-              </form>
+            <div className="flex flex-col justify-between">
+              <div className="bg-black p-8">
+                <h3 className="text-sm uppercase tracking-widest mb-6 text-red-600">Рекомендации</h3>
+                <ul className="space-y-4">
+                  <li className="flex gap-4 border-b border-neutral-800 pb-4">
+                    <span className="text-red-600 font-bold">→</span>
+                    <p>Усилить входной контроль влажности полукопчёных изделий первого сорта</p>
+                  </li>
+                  <li className="flex gap-4 border-b border-neutral-800 pb-4">
+                    <span className="text-red-600 font-bold">→</span>
+                    <p>Расширить ассортимент продукции высшего сорта в розничной сети</p>
+                  </li>
+                  <li className="flex gap-4">
+                    <span className="text-red-600 font-bold">→</span>
+                    <p>Проводить регулярный мониторинг качества поставляемой продукции</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-black p-8 mt-6">
+                <h3 className="text-sm uppercase tracking-widest mb-4 text-neutral-500">Нормативная база</h3>
+                <ul className="space-y-2 text-sm">
+                  <li>· ГОСТ Р 53588-2009 — Колбасы полукопчёные</li>
+                  <li>· ГОСТ Р 9792-73 — Методы отбора проб</li>
+                  <li>· ТР ТС 021/2011 — Безопасность пищевой продукции</li>
+                  <li>· ТР ТС 022/2011 — Маркировка пищевой продукции</li>
+                  <li>· ГОСТ Р 51074-2003 — Информация для потребителя</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-4 md:px-8 bg-black text-white">
-        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm mb-4 md:mb-0">2025 GRIDFORM Studio. Все права защищены.</p>
-          <div className="flex space-x-8">
-            <a href="#" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors">
-              Instagram
-            </a>
-            <a href="#" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors">
-              Behance
-            </a>
-            <a href="#" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors">
-              Telegram
-            </a>
-          </div>
+      <footer className="py-8 px-4 md:px-8 border-t border-black">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-sm uppercase tracking-widest font-bold">Курсовая работа · 2026</p>
+          <p className="text-sm text-neutral-500 text-center">
+            Товароведная характеристика и оценка качества копчёностей: колбасные изделия полукопчёные в розничной сети
+          </p>
+          <p className="text-sm text-neutral-500">ГОСТ Р 53588-2009</p>
         </div>
       </footer>
     </main>
-  )
+  );
 }
